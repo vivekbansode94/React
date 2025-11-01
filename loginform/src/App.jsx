@@ -1,5 +1,8 @@
 import SocialLogin from "./Components/sociallogin";
 import InputField from "./Components/InputField";
+// import { FaLock } from "react-icons/fa";
+import { FaLockOpen } from "react-icons/fa";
+  import { MdBlock } from "react-icons/md";
 const App = () => {
   return (
     <div className="login-container">
@@ -8,7 +11,11 @@ const App = () => {
       <p className="separator"><span>or</span></p>
       <form action="#" className="login-form">
         <InputField type="email" placeholder="Email address" icon="mail" />
-        <InputField type="password" placeholder="Password" icon="" />
+        <FaLockOpen />
+      
+<MdBlock />
+        <InputField type="password" placeholder="Password" icon="Falock" />
+        
         <a href="#" className="forgot-password-link">Forgot password?</a>
         <button type="submit" className="login-button">Log In</button>
       </form>
